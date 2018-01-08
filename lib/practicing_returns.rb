@@ -1,5 +1,5 @@
 require 'pry'
-
+array = ["Tim", "Tom", "Jim"]
 def hello(array)
   i = 0
   while i < array.length
@@ -11,4 +11,5 @@ def hello(array)
 end
 
 
-hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
+# hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
+hello(array) { |name| puts "Hi, #{name}" }
